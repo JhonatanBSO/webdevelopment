@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--íconos-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
+    <!--box icons-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- menú css-->
+    <link rel="stylesheet" href="css/style.css" <!-- ya que el proyecto está en la misma carpeta-->
+    <title>Sitio Web Portafolio Responsivo</title>
+<head>
+
+<body>
+
+    <!--barra lateral-->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-text">
+                    J
+                </a>
+            </div>
+            <div class="nav__menu">
+               <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#sobremí" class="nav__link">Sobre mí</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#habilidades" class="nav__link">Habilidades </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#trabajos" class="nav__link">Trabajos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#servicios" class="nav__link">Servicios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacto" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+               </div> 
+            </div>
+
+            <div class="btn__share">
+                <i class="uil uil-share-alt social__share"></i>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                 <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- menu-->
+
+    <main class="main"> 
+        <!-- home-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__social">
+                    <span class="home__social-follow">
+                        Follow Me
+                    </span>
+                    <div class="home__social-links">
+                        <a href="https://www.linkedin.com/in/jhonatan-sevillano-olortegui-4bb154119/" target="_blank" class="home__social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/jhonatan.sevillanoolortegui/" target="_blank" class="home__social-link">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jbsevillanoo/" target="_blank" class="home__social-link">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="img/home-img.jpg" alt="" class="home__img">
+                
+                <div class="home__data">
+                    <h1 class="home__title">Hola, soy Jhonatan</h1>
+                    <h3 class="home__subtitle">Entusiasta DW</h3>
+                    <p class="home__description">Acá tengo que meter mi floro.</p>
+                    <a href="#sobremí" class="button"><i class="uil uil-user button__icon"></i>
+                    Más Sobre Mí
+                    </a>
+                </div>
+                 <div class="my__info">
+                    <div class="info__item">
+                        <i class="uil uil-facebook-messenger info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Messenger</h3>
+                            <span class="info__subtitle">user.fb123</span>
+                        </div>
+                    </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-whatsapp-alt info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Whatsapp</h3>
+                            <span class="info__subtitle">+51 920793470</span>
+                        </div>
+                    </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-envelope-edit info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Email</h3>
+                            <span class="info__subtitle">jhonatan.sevillano.o@uni.pe</span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- sobre mí-->
+
+        <section class="about section" id="sobremí">
+            <h2 data-heading="Introducción" class="section__title">Sobre Mí</h2>
+           
+            <div class="about__container container grid">
+                <img src="img/about-img.jpg" alt="" class="about__img" >
+
+                <div class="about__data">
+                    <h3 class="about__heading">Hola, soy Jhonatan, resido en Lima-Perú</h3>
+                    <p class="about__description">Acá describo quién soy.</p>
+                    <div class="about__info grid">
+                        <div class="about__box">
+                            <i class="uil uil-award about__icons"></i>
+                            <h3 class="about__title">Experiencia</h3>
+                            <span class="about__subtitle">0 + años</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="uil uil-suitcase-alt about__icons"></i>
+                            <h3 class="about__title">Completado</h3>
+                            <span class="about__subtitle">0 + Proyectos</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="uil uil-headphones about__icons"></i>
+                            <h3 class="about__title">Soporte</h3>
+                            <span class="about__subtitle">En línea 24/7</span>
+                        </div>
+
+
+                    </div>
+                    <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>
+                    Contáctame
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- cualidades-->
+        <section class="qualifications section">
+            <h2 data-heading="Mi Ruta" class="section__title">Calificaciones</h2>
+
+            <div class="qualification__container container grid">
+                <div class="eduaction">
+                    <h3 class="qualification__title">
+                        <i class="uil uil-graduation-cap"></i> Educación
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Universidad Nacional de Ingeniería (Rimac, Lima)</h3>
+                            <p class="timeline__text">Estudiante de Ingeniería Física</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             2018 - Presente
+                            </span>
+                        </div>
+                        
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">CEPS-UNI (Rimac, Lima)</h3>
+                            <p class="timeline__text">Inglés Básico</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             2020 - 2021
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Glmo José de San Martín - 3069 (Ancón, Lima)</h3>
+                            <p class="timeline__text">Estudiante de Secundaria</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             2011 - 2013
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h3 class="qualification__title">
+                        <i class="uil uil-suitcase"></i> Experiencia
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">RayPlast S.A. (Ancón, Lima)</h3>
+                            <p class="timeline__text">Encargado de inventario</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             enero 2022 - febrero 2022
+                            </span>
+                        </div>
+                        
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Mcdo. La Merced (Ancón, Lima)</h3>
+                            <p class="timeline__text">Ayudante electricista</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             noviembre 2022 - diciembre 2022
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">GREIC-UNI (Rimac, Lima)</h3>
+                            <p class="timeline__text">Desarrollo de Robot Balanceador</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                             diciembre 2022 - Present
+                            </span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- habilidades-->
+        <section class="skills section" id="habilidades">
+            <h2 data-heading="Mis Habilidades" class="section__title">Mi Experiencia</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__tabs">
+                    <div class="skills__header skills__active" data-target="#frontend">
+                        <i class="uil uil-screw skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">SolidWorks/AutoCad</h1>
+                            <span class="skills__subtitle">4 meses</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__header" data-target="#design">
+                        <i class="uil uil-x skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">MatLab</h1>
+                            <span class="skills__subtitle">6 meses</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__header" data-target="#backend">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">C/C++</h1>
+                            <span class="skills__subtitle">1 año</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                </div>
+                
+                <div class="skills__content">
+                    <div class="skills__group skills__active" data-content id="frontend">
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 30%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 30%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">25%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 25%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C/C++</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 40%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skills__group" data-content id="design">
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 40%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">VisualBasic6.0</h3>
+                                    <span class="skills__number">25%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 25%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group" data-content id="backend">
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PinacleStudio</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 30%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Camtasia</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Protheus/Multisim</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 40%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SketchUp</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 20%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- trabajos-->
+
+        <section class="work section" id="trabajos">
+            <h2 data-heading="Mi Portafolio" class="section__title">Trabajos Recientes</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".app">App</span>
+                <span class="work__item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="img/work-1.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño Web</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Proporcionar los servicios para el diseño</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="img/work-2.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño de una App</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Diseño y mantenimiento de la App</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+ 
+                <div class="work__card mix design">
+                    <img src="img/work-3.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño de Marca</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Diseño creativo del logo y Aplicaciones</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="img/work-4.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño de una App</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Promoción y Servicios de app móvil.</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="img/work-5.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño de Marca</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Diseño para Tecnolog++ia y Servicios</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="img/work-6.webp" alt="" class="work__img">
+                    <h3 class="work__title">Diseño Web</h3>
+                    <span class="work__button">Demo 
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">App para tecnología y servicios</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio PopUp-->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="img/work-2.webp" alt="" class="portfolio__popup-img">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Características - <span>Diseño</span></div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">App para tecnología y servicios</h3>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quas delectus voluptatum quam?</p>
+                        <ul class="details__info">
+                            <li>Created - <span>4 dec 2020</span> </li>
+                            <li>Tecnologies - <span>html css</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.dominio.com</a></span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Servicios-->
+        <section class="services section" id="servicios">
+            <h2 data-heading="Servicios" class="section__title">Qué Ofrezco</h2>
+
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Web <br> Diseñador</h3>
+                    </div>
+
+                    <span class="services__button">
+                        Ver Más <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Diseñador Web</h3>
+                            <p class="services__modal-description">Servicio con más de x años de experiencia.
+                            Proporcionando trabajo de calidad a clientes y compañías.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo la interfaz de usuario.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo página web.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Creo interacciones de elementos ux.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Posiciono la marca de tu compañía.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Diseño y maquetas de productos para compañías.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">UI/UX <br> Diseñador</h3>
+                    </div>
+
+                    <span class="services__button">
+                        Ver Más <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Diseñador UI/UX</h3>
+                            <p class="services__modal-description">Servicio con más de x años de experiencia.
+                            Proporcionando trabajo de calidad a clientes y compañías.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo la interfaz de usuario.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo página web.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Creo interacciones de elementos ux.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Posiciono la marca de tu compañía.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Diseño y maquetas de productos para compañías.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-edit services__icon"></i>
+                        <h3 class="services__title">Branding <br> Diseñador</h3>
+                    </div>
+
+                    <span class="services__button">
+                        Ver Más <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Diseñador de Marca</h3>
+                            <p class="services__modal-description">Servicio con más de x años de experiencia.
+                            Proporcionando trabajo de calidad a clientes y compañías.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo la interfaz de usuario.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Desarrollo página web.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Creo interacciones de elementos ux.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Posiciono la marca de tu compañía.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Diseño y maquetas de productos para compañías.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- testimonios-->
+        <section class="testimonials section">
+            <h2 data-heading="Mis clientes dicen" class="section__title">Testimonios</h2>
+            <div class="testimonials__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Consequatur atque similique pariatur.</p>
+                        <h3 class="testimonial__date">Julio 18. 2023</h3>
+                        <div class="testimonial__profile">
+                            <img src="img/client-1.jpg" alt="" class="testimonial__profile-img">
+                            
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Mónica Galindo</span>
+                                <span class="testimonial__profile-detail">Directora de una compañía</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Consequatur atque similique pariatur.</p>
+                        <h3 class="testimonial__date">Julio 18. 2023</h3>
+                        <div class="testimonial__profile">
+                            <img src="img/client-2.jpg" alt="" class="testimonial__profile-img">
+                            
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Elver Galdós</span>
+                                <span class="testimonial__profile-detail">CEO de una compañía</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Consequatur atque similique pariatur.</p>
+                        <h3 class="testimonial__date">Julio 18. 2023</h3>
+                        <div class="testimonial__profile">
+                            <img src="img/client-3.jpg" alt="" class="testimonial__profile-img">
+                            
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Casimiro Mamani</span>
+                                <span class="testimonial__profile-detail">CEO de una compañía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+
+
+        <!-- contacto-->
+        <section class="contact section" id="contacto">
+            <h2 data-heading="Obtenlo a un click" class="section__title">Contáctame</h2>
+        
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="uil uil-envelope-edit contact__card-icon"></i>
+                            <h3 class="contact__card">Email</h3>
+                            <span class="contact__card-data">jhonatan.sevillano.o@uni.pe</span>
+                            <span class="contact__button">
+                                Escríbeme <i class="uil uil-arrow-right services__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="uil uil-whatsapp contact__card-icon"></i>
+                            <h3 class="contact__card">Whatsapp</h3>
+                            <span class="contact__card-data">+51 920793470</span>
+                            <span class="contact__button">
+                                Escríbeme <i class="uil uil-arrow-right services__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="uil uil-facebook-messenger contact__card-icon"></i>
+                            <h3 class="contact__card">Messenger</h3>
+                            <span class="contact__card-data">user.fb123</span>
+                            <span class="contact__button">
+                                Escríbeme <i class="uil uil-arrow-right services__button-icon"></i>
+                            </span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input">
+                            <label for="">Nombre de usuario</label>
+                            <span>Nombre de usuario</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="tel" class="input">
+                            <label for="">Teléfono</label>
+                            <span>Teléfono</span>
+                        </div>
+
+                        <div class="input__container textarea">
+                            <textarea name="" id=""  class="input"></textarea>
+                            <label for="">Mensaje</label>
+                            <span>Mensaje</span>
+                        </div>
+
+                        <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i>
+                            Enviar mensaje 
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- pie de página -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer_container container grid">
+                    <div>
+                         <h1 class="footer__title">Jhonatan</h1>
+                         <span class="footer__subtitle">Desarrollador Frontend</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Servicios</a>
+                        </li>
+
+                        <li>
+                            <a href="#work" class="footer__link">Trabajos</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="footer__link">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/jhonatan-sevillano-olortegui-4bb154119/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/jhonatan.sevillanoolortegui/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jbsevillanoo/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Megustacodear. Todos los derechos son reservados</p>
+            </div>
+        </footer>
+
+    </main>
+
+    
+
+
+    <!--desplazamiento-->
+
+    <!-- filtro mixto-->
+    <script src="js/mixitup.min.js"></script>
+
+    <!--swiper js-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- menu js-->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</head>
+
+
+</html>
